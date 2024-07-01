@@ -1,4 +1,3 @@
-'''
 Construa um algoritmo que determine quanto será gasto para encher o
 tanque de um carro. O usuário fornecerá os seguintes dados: Tipo de
 carro (TC) (G – gasolina ou A – álcool) e Capacidade do tanque (CT),
@@ -8,8 +7,6 @@ Gasolina ou álcool) e pedirá para o usuário informar o
 valor do preço do litro do combustível.
 Como saída, será informado para o usuário, o valor,
 em reais, do preço de se encher tanque de combustível.
-
-'''
 
 #variaveis
 tc = ""
