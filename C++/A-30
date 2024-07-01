@@ -1,0 +1,21 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    char nome[25];
+    
+    cout << "Informe seu nome: ";
+    cin >> nome;
+    
+    cout << " " << endl;
+    cout << "Meu nome e: " << nome << endl;
+    cout << " " << endl;
+    cout << "Sou aluno do curso Sistema de Informacao." << endl;
+    cout << " " << endl;
+    cout << "Estou no primeiro ano." << endl;
+    cout << " " << endl;
+    cout << "Gosto de programacao!!!" << endl;
+    cout << " " << endl;
+    
+}

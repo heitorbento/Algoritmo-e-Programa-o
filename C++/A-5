@@ -1,0 +1,28 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+    int n1, n2, n3;
+    
+    cout << "Digite o numero 1: ";
+    cin >> n1;
+    cout << "Digite o numero 2: ";
+    cin >> n2;
+    cout << "Digite o numero 3: ";
+    cin >> n3;
+    
+    if(n1 > n2 && n1 > n3){
+         cout << "O numero " << n1 << "é maior" << endl;
+    }else{
+        if(n2 > n3 && n2 > n1){
+            cout << "O numero " << n2 << "é maior" << endl;
+        }else{
+            if(n3 > n1 && n3 > n2){
+                cout << "O numero " << n3 << "é maior" << endl;
+            }
+        }
+    }
+    return 0;
+}

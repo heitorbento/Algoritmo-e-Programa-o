@@ -1,0 +1,33 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    int time;
+    
+    cout << "Escolha dentre os times abaixo um: " << endl;
+    cout << "Digite - 1 - para escolher Sao Paulo." << endl;
+    cout << "Digite - 2 - para escolher Santos." << endl;
+    cout << "Digite - 3 - para escolher Palmeiras." << endl;
+    cout << "Digite - 4 - para escolher Corinthians." << endl;
+    cin >> time;
+    
+    switch(time){
+        case 1:
+            cout << "Voce escolheu o time: Sao Paulo." << endl;
+        break;
+        case 2:
+            cout << "Voce escolheu o time: Santos." << endl;
+        break;
+        case 3:
+            cout << "Voce escolheu o time: Palmeiras." << endl;
+        break;
+        case 4:
+            cout << "Voce escolheu o time: Corinthians." << endl;
+        break;
+        default:
+            cout << "Opcao de time invalida!!" << endl;
+    }
+    return 0;
+}
+

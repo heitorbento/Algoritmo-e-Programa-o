@@ -1,0 +1,27 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int matriz[4][4];
+    int i, j;
+    
+    for(i=0; i<4; i++){
+        for(j=0; j<4; j++){
+            cout << "Digite um valor para a posicao " << i+1 << ", " << j+1 << " da matriz: ";
+            cin >> matriz[i][j];
+            cout << endl;
+        }
+    }
+    cout << endl;
+    cout << "Os valores da matriz sao: " << endl;
+    for(i=0; i<4; i++){
+        for(j=0; j<4; j++){
+            cout << matriz[i][j] << "\t";
+        }
+        cout << endl;
+    }
+    cout << endl;
+}
+

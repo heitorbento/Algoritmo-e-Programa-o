@@ -1,0 +1,76 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+
+
+int main() {
+    int n,i;
+    
+    cout << "Quantos produtos deseja saber o valor: ";
+    cin >> n;
+    cout << endl;
+    cout << endl;
+    fflush(stdin);
+    struct produto {
+        string produto;
+        double preco;
+        double total;
+    }strProduto[n];
+    
+    int opc, f;
+    
+    
+    for(i=0; i<n; i++){
+        fflush(stdin);
+        cout << "Informe o nome do produto " << i+1 << ": ";
+        getline(cin, strProduto[i].produto);
+        cout << endl;
+        fflush(stdin);
+        cout << "Informe o preco do produto " << i+1 << ": ";
+        cin >> strProduto[i].preco;
+        cout << endl;
+        cout << endl;
+        fflush(stdin);
+        cout << " - Formas de Pagamento - " << endl;
+        cout << "1 - Pagamento a vista (10% de desconto)" << endl;
+        cout << "2 - Pagamento com 30 dias de prazo (sem desconto)" << endl;
+        cout << "3 - Pagamento em 10X (Cartao de credito - sem desconto - sem acrecimo)" << endl;
+        cout << "4 - Pagamento em 10X (Boleto - 10% acrecimo)" << endl;
+        cout << "De acordo com o mene abaixo, como deseja pagar: ";
+        cin >> opc;
+        fflush(stdin);
+        cout << endl;
+        cout << endl;
+        switch(opc){
+            case 1:
+                strProduto[i].total = strProduto[i].preco * 0.9;
+                cout << "O valor total do produto " << i+1 << " e: " << strProduto[i].total << endl;
+
+              break;
+            case 2:
+                strProduto[i].total = strProduto[i].preco;
+                cout << "O valor total do produto " << i+1 << " e: " << strProduto[i].total << endl;
+              break;
+            case 3:
+                strProduto[i].total = strProduto[i].preco;
+                f = strProduto[i].total / 10;
+                cout << "O valor total do produto " << i+1 << " e: " << strProduto[i].preco << endl;
+                cout << "O valor de cada parcela do produto " << i+1 << " sera: " << f << endl;
+              break;
+            case 4:
+                strProduto[i].total = strProduto[i].preco * 1.1;
+                f = strProduto[i].total / 10;
+                cout << "O valor total do produto " << i+1 << " e: " << strProduto[i].total << endl;
+                cout << "O valor de cada parcela do produto " << i+1 << " sera: " << f << endl;
+              break;
+            default:
+             cout << "Opcao Invalida!" << endl;
+             cout << endl;
+        }
+        cout << endl;
+        cout << endl;
+    }
+}
+

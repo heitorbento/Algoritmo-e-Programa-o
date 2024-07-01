@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+    int n1, n2;
+    
+    cout << "Digite o numero 1: ";
+    cin >> n1;
+    cout << "Digite o numero 2: ";
+    cin >> n2;
+    
+    if(n1 > n2){
+        cout << "O numero " << n1 << " e maior" << endl;
+    }else{
+        cout << "O numero " << n2 << " e maior" << endl;
+    }
+    return 0;
+}

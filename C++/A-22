@@ -1,0 +1,13 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    int i, n=1, s=0;
+    while(n != 0){
+        cout << "Informe um numero:";
+        cin >> n;
+        s++;
+    }
+    cout << "A quantidade de numeros digitados foi: " << s << endl;
+}

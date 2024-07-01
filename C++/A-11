@@ -1,0 +1,74 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    int opc, n1, n2;
+    float res;
+    
+    cout << "Escolha uma das Opcoes: " << endl;
+    cout << "1 - para SOMAR" << endl;
+    cout << "2 - para SUBTRAIR" << endl;
+    cout << "3 - para DIVIDIR" << endl;
+    cout << "4 - para MULTIPLICAR" << endl;
+    cout << "5 - para SAIR" << endl;
+    cout << " " << endl;
+    
+    cout << "Informe a Opcao Desejada: ";
+    cin >> opc;
+    cout << " " << endl;
+    cout << " " << endl;
+    
+    switch(opc){
+        case 1:
+            cout << "Digite o primeiro numero: ";
+            cin >> n1;
+            cout << " " << endl;
+            cout << "Digite o segundo numero: ";
+            cin >> n2;
+            cout << " " << endl;
+            res = n1 + n2;
+            cout << "A soma e: " << res << endl;
+            cout << " " << endl;
+        break;
+        case 2:
+           cout << "Digite o primeiro numero: ";
+            cin >> n1;
+            cout << " " << endl;
+            cout << "Digite o segundo numero: ";
+            cin >> n2;
+            cout << " " << endl;
+            res = n1 - n2;
+            cout << "A subtracao e: " << res << endl;
+            cout << " " << endl;
+        break;
+        case 3:
+            cout << "Digite o primeiro numero: ";
+            cin >> n1;
+            cout << " " << endl;
+            cout << "Digite o segundo numero: ";
+            cin >> n2;
+            cout << " " << endl;
+            res = n1 / n2;
+            cout << "A divisao e: " << res << endl;
+            cout << " " << endl;
+        break;
+        case 4:
+            cout << "Digite o primeiro numero: ";
+            cin >> n1;
+            cout << " " << endl;
+            cout << "Digite o segundo numero: ";
+            cin >> n2;
+            cout << " " << endl;
+            res = n1 * n2;
+            cout << "A multiplicacao e: " << res << endl;
+            cout << " " << endl;
+        break;
+        case 5:
+            cout << " " << endl;
+        break;
+        default:
+            cout << "Opcao Invalida!!" << endl;
+    }
+    return 0;
+}

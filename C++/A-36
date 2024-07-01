@@ -1,0 +1,29 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    char sex;
+    double ps, altura;
+    
+    cout << "Informe seu sexo(M - Masculino e F - Feminino): ";
+    cin >> sex;
+    
+    
+    if(sex == 'M'){
+        cout << "Informe sua altura: ";
+        cin >> altura;
+        ps = (72.7 * altura) - 58;
+        cout << "Seu peso masculino ideal para " << altura << " e: " << ps << endl;
+    }else{
+        if(sex == 'F'){
+            cout << "Informe sua altura: ";
+            cin >> altura;
+            ps = (62.1 * altura) - 44.7;
+            cout << "Seu peso feminino ideal para " << altura << " e: " << ps << endl;
+        }else{
+            cout << "Dados de sexo invalidos." << endl;
+        }
+    }
+}
+

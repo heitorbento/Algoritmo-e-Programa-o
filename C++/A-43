@@ -1,0 +1,66 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+    char simbulo;
+    float n1, n2, res;
+    
+    cout << "Escolha dentre os times abaixo um: " << endl;
+    cout << "Digite _ + _ para escolher Soma." << endl;
+    cout << "Digite _ - _ para escolher Subtracao." << endl;
+    cout << "Digite _ * _ para escolher Multiplicacao." << endl;
+    cout << "Digite _ / _ para escolher Divisao." << endl;
+    cin >> simbulo;
+    
+    
+    
+    switch(simbulo){
+        case '+':
+            cout << "Informe o primeiro numero: ";
+            cin >> n1;
+            cout << "Informe o segundo numero: ";
+            cin >> n2;
+            
+            res = n1 + n2;
+            
+            cout << "Sua soma deu: " << res << endl;
+        break;
+        case '-':
+            cout << "Informe o primeiro numero: ";
+            cin >> n1;
+            cout << "Informe o segundo numero: ";
+            cin >> n2;
+            
+            res = n1 - n2;
+            
+            cout << "Sua subtracao deu: " << res << endl;
+        break;
+        case '*':
+            cout << "Informe o primeiro numero: ";
+            cin >> n1;
+            cout << "Informe o segundo numero: ";
+            cin >> n2;
+            
+            res = n1 * n2;
+            
+            cout << "Sua multiplicacao deu: " << res << endl;
+        break;
+        case '/':
+            cout << "Informe o primeiro numero: ";
+            cin >> n1;
+            cout << "Informe o segundo numero: ";
+            cin >> n2;
+            
+            res = n1 / n2;
+            
+            cout << "Sua divisao deu: " << res << endl;
+        break;
+        default:
+            cout << "Opcao de conta invalida!!" << endl;
+    }
+    
+    return 0;
+}
+

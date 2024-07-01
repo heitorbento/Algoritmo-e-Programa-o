@@ -1,0 +1,43 @@
+#include <cstdlib>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main(){
+    int vetor1[15];
+    int vetor2[15];
+    int i, media;
+    string ap;
+    
+    for(i=0; i<15; i++){
+        cout << "Digite a nota P1 do aluno " << i+1 << ": ";
+        cin >> vetor1[i]; 
+        cout << "Digite a nota P2 do aluno " << i+1 << ": ";
+        cin >> vetor2[i];
+        cout << endl;
+        media = (vetor1[i] + vetor2[i]) / 2;
+        if(media > 6){
+            ap = "Aprovado!";
+        }else{
+            if(media < 6 && media > 4){
+                ap = "Recuperacao!";
+            }else{
+                if(media < 4){
+                ap = "Reprovado!";
+                }
+            }
+        }
+        cout << endl;
+    }
+    cout << "Situacao dos alunos: ";
+    cout << endl;
+    for(i=0; i<15; i++){
+        cout << "Aluno:" << i+1 << " P1 = " << vetor1[i] << " P2 = " << vetor2[i] << endl;
+        cout << "Media = " << media << endl;
+        cout << ap << endl;
+        cout << endl;
+    }
+    cout << endl;
+}
+

@@ -1,0 +1,19 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+
+    int numero;
+    
+    cout << "Informe um numero inteiro e positivo: ";
+    cin >> numero;
+    
+    
+    if(numero % 2 == 0){
+        cout << "Seu numero e PAR!!!" << endl;
+    }else{
+        cout << "Seu numero e IMPAR!!!" << endl;
+    }
+}
+

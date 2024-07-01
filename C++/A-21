@@ -1,0 +1,68 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+
+int main(int argc, char** argv) {
+    int n1, n2;
+    float res;
+    char opc; 
+    
+    cout << "Escolha uma das Opcoes: " << endl;
+    cout << "+ . SOMAR" << endl;
+    cout << "- . SUBTRAIR" << endl;
+    cout << "/ . DIVIDIR" << endl;
+    cout << "* . MULTIPLICAR" << endl;
+    cout << "S . SAIR" << endl;
+    cout << endl;
+    
+    cout << "Informe a Opcao Desejada: ";
+    cin >> opc;
+    cout << endl;
+    cout << endl;
+    
+    switch(opc){
+        case '+':
+            cout << "Digite o numero 1: ";
+            cin >> n1;
+            cout << "Digite o numero 2: ";
+            cin >> n2;
+            cout << endl;
+            res = n1 + n2;
+            cout << "A soma e: " << res << endl;
+        break;
+        case '-':
+           cout << "Digite o numero 1: ";
+            cin >> n1;
+            cout << "Digite o numero 2: ";
+            cin >> n2;
+            cout << endl;
+            res = n1 - n2;
+            cout << "A subtracao e: " << res << endl;
+        break;
+        case '/':
+            cout << "Digite o numero 1: ";
+            cin >> n1;
+            cout << "Digite o numero 2: ";
+            cin >> n2;
+            cout << endl;
+            res = n1 / n2;
+            cout << "A divisao e: " << res << endl;
+        break;
+        case '*':
+            cout << "Digite o numero 1: ";
+            cin >> n1;
+            cout << "Digite o numero 2: ";
+            cin >> n2;
+            cout << endl;
+            res = n1 * n2;
+            cout << "A multiplicacao e: " << res << endl;
+        break;
+        case 'S':
+            cout << endl;
+        break;
+        default:
+            cout << "Opcao Invalida!!" << endl;
+    }
+}
+

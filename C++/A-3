@@ -1,0 +1,20 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+    int idade;
+    
+    cout << "Digite sua idade: ";
+    cin >> idade;
+    
+    if(idade >= 18){
+        cout << "Voce ja e maior de idade!!!" << endl;
+    }else{
+        cout << "Voce ainda nao e maior de idade!!!" << endl;
+    }
+    
+    return 0;
+}
+

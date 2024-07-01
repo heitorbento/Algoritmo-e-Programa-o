@@ -1,0 +1,70 @@
+#include <cstdlib>
+#include <iostream>
+#include <cctype>
+#include <fstream>
+
+using namespace std;
+struct Pet {
+    string nome;
+    string especie;
+    string raca;
+    char sexo;
+    int idade;
+    string nomeDono;
+    string rgDono;
+    string telefoneDono;
+};
+
+int main() {
+    int N;
+    cout << "Digite o numero de pets a cadastrar: ";
+    cin >> N;
+
+    Pet pets[N];
+    
+    for (int i = 0; i < N; ++i) {
+        cout << "\nDados do Pet #" << i + 1 << ":" << endl;
+        cout << "Nome: ";
+        cin.ignore();
+        getline(cin, pets[i].nome);
+        cout << "Especie: ";
+        getline(cin, pets[i].especie);
+        cout << "Raca: ";
+        getline(cin, pets[i].raca);
+        cout << "Sexo (M/F): ";
+        cin >> pets[i].sexo;
+        pets[i].sexo = toupper(pets[i].sexo);
+        cout << "Idade: ";
+        cin >> pets[i].idade;
+        cout << "Nome do Dono: ";
+        cin.ignore(); 
+        getline(cin, pets[i].nomeDono);
+        cout << "RG do Dono: ";
+        getline(cin, pets[i].rgDono);
+        cout << "Telefone do Dono: ";
+        getline(cin, pets[i].telefoneDono);
+    }
+    
+    ofstream arquivo("pets.txt");
+
+    if (arquivo.is_open()) {
+        for (int i = 0; i < N; ++i) {
+            arquivo << "Pet #" << i + 1 << ":\n";
+            arquivo << "Nome: " << pets[i].nome << "\n";
+            arquivo << "Especie: " << pets[i].especie << "\n";
+            arquivo << "Raca: " << pets[i].raca << "\n";
+            arquivo << "Sexo: " << pets[i].sexo << "\n";
+            arquivo << "Idade: " << pets[i].idade << "\n";
+            arquivo << "Nome do Dono: " << pets[i].nomeDono << "\n";
+            arquivo << "RG do Dono: " << pets[i].rgDono << "\n";
+            arquivo << "Telefone do Dono: " << pets[i].telefoneDono << "\n\n";
+        }
+         arquivo.close();
+        cout << "Dados dos pets foram salvos no arquivo 'pets.txt'." << endl;
+        system("start pets.txt");
+    } else {
+        cout << "Erro ao abrir o arquivo 'pets.txt' para escrita." << endl;
+    }
+    
+}
+

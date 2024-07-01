@@ -1,0 +1,74 @@
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+    
+int M, N;
+cout << "Qual o tamanho da linha da matriz? ";
+cin >> M;
+cout << "Qual o tamanho da coluna da matriz? ";
+cin >> N;
+int matriz1[M][N];
+int matriz2[M][N];
+int matriz3[M][N];
+int i, j;
+
+    for(i=0; i<M; i++){
+        for(j=0; j<N; j++){
+            cout << "Digite o valor para preencher a matriz 1 [" << i << ", " << j << "]: ";
+            cin >> matriz1[i][j];
+        }
+    }
+    cout << endl;
+    for(i=0; i<M; i++){
+        for(j=0; j<N; j++){
+            cout << "Digite o valor para preencher a matriz 2 [" << i << ", " << j << "]: ";
+            cin >> matriz2[i][j];
+        }
+    }
+    
+
+    cout << endl;
+    cout << "A matriz 1 e: " << endl;
+    cout << endl;
+    for(i = 0; i < M; i++) {
+        for(j = 0; j < N; j++){
+            cout << matriz1[i][j] << "\t";
+        }
+    cout << endl;
+    } 
+    cout << endl;
+    cout << "A matriz 2 e: " << endl;
+    cout << endl;
+    
+    for(i = 0; i < M; i++) {
+        for(j = 0; j < N; j++){
+            cout << matriz2[i][j] << "\t";
+        }
+
+    cout << endl;
+    
+    }
+    for(i=0; i<M; i++){
+        for(j=0; j<N; j++){
+            matriz3[i][j] = matriz1[i][j] + matriz2[i][j];
+        }
+    }
+
+    cout << endl;
+    cout << "A matriz 3 sera: " << endl;
+    cout << endl;
+    for(i = 0; i < M; i++) {
+        for(j = 0; j < N; j++){
+            
+            cout << matriz3[i][j] << "\t";
+        }
+
+    cout << endl;
+    
+    }
+    cout << endl;
+}
+

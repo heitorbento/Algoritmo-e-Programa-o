@@ -1,0 +1,14 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    int n, m=0, i;
+    
+    for(n = 100; n <= 200; n+=2){
+        if(n % 2 == 0){
+            m += n;
+        }
+    }
+    cout << "A quantidade soma dos pares deu: " << m << endl;
+}

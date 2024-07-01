@@ -1,0 +1,18 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    cout << "PES - Programacao Estruturada - Turma A." << endl;
+    cout << " " << endl;
+    cout << "Prova Bimestral." << endl;
+    cout << " " << endl;
+    cout << "Valor - 4.0 pontos" << endl;
+    cout << " " << endl;
+    cout << "Aluno: Alexsia Marim de Lucas" << endl;
+    cout << "Matricula: VP3028291;" << endl;
+    cout << " " << endl;
+    
+    return 0;
+}
+

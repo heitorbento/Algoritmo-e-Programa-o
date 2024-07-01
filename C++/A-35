@@ -1,0 +1,71 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    
+    int cod, quant;
+    double vf;
+
+    cout << "***          CARDAPIO            ***" << endl;
+    cout << "CACHORRO QUENTE:   100  -   RS 9,20 " << endl;
+    cout << "BAURU SIMPLES:     101  -   RS 12,00" << endl;
+    cout << "BAURU COM OVO:     102  -   RS 13,00" << endl;
+    cout << "HAMBURGER:         103  -   RS 10,00" << endl;
+    cout << "CHEESEBURGER:      104  -   RS 12,00" << endl;
+    cout << "REFRIGERANTE LATA: 105  -   RS 5,00 " << endl;
+    cout << "AGUA:              106  -   RS 3,00 " << endl;
+    cout << " " << endl;
+    
+    cout << "Informe o codigo do alimento desejado: ";
+    cin >> cod;
+    
+    
+    switch(cod){
+        case 100:
+            cout << "Informe a quantidade de alimento desejado: ";
+            cin >> quant;
+            vf = quant * 9.2;
+            cout << "O valor total a ser pago pelo lanche e: " << vf << endl;
+        break;
+        case 101:
+            cout << "Informe a quantidade de alimento desejado: ";
+            cin >> quant;
+            vf = quant * 12;
+            cout << "O valor total a ser pago pelo lanche e: " << vf << endl;
+        break;
+        case 102:
+            cout << "Informe a quantidade de alimento desejado: ";
+            cin >> quant;
+            vf = quant * 13;
+            cout << "O valor total a ser pago pelo lanche e: " << vf << endl;
+        break;
+        case 103:
+            cout << "Informe a quantidade de alimento desejado: ";
+            cin >> quant;
+            vf = quant * 10;
+            cout << "O valor total a ser pago pelo lanche e: " << vf << endl;
+        break;
+        case 104:
+            cout << "Informe a quantidade de alimento desejado: ";
+            cin >> quant;
+            vf = quant * 12;
+            cout << "O valor total a ser pago pelo lanche e: " << vf << endl;
+        break;
+        case 105:
+            cout << "Informe a quantidade de alimento desejado: ";
+            cin >> quant;
+            vf = quant * 5;
+            cout << "O valor total a ser pago pelo lanche e: " << vf << endl;
+        break;
+        case 106:
+            cout << "Informe a quantidade de alimento desejado: ";
+            cin >> quant;
+            vf = quant * 3;
+            cout << "O valor total a ser pago pelo lanche e: " << vf << endl;
+        break;
+        default:
+            cout << "Codigo Invalido!!" << endl;
+    }
+}
+

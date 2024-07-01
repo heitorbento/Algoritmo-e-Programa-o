@@ -1,0 +1,21 @@
+#include <iostream>
+#include <cstdlib>
+
+using namespace std;
+
+int main(int argc, char** argv) {
+    int gSP, gPal;
+    
+    cout << "\n *** Placar Sao Paulo X Palmeiras *** \n";
+    cout << "Informe a quantidade de gols do Sao Paulo: ";
+    cin >> gSP;
+    cout << "Informe a quantidade de gols do Palmeiras: ";
+    cin >> gPal;
+    
+    if(gSP > gPal){
+        cout << "A festa e tricolor!!!\n";
+    }else{
+        cout << "A festa e dos porco!!!\n";
+    }
+    return 0;
+}

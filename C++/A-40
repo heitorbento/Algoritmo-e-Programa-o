@@ -1,0 +1,17 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    int i, n;
+    double media=0, mediaf;
+    for (i = 1; i <= 20; i++){
+        cout << "Informe um numero interiro e positivo:";
+        cin >> n;
+        
+        media += n;
+    }
+    mediaf = media / 20;
+    cout << "A media aritimetica e: " << mediaf << endl;
+}
+

@@ -1,0 +1,28 @@
+#include <cstdlib>
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+int main() {
+    int ouro, prata, bronze, soma;
+    
+    ofstream arquivo;
+
+    arquivo.open("medalhas.txt");
+        cout << "Digite o numero de medalhas de OURO que o brasil ganhou nas Olimpiadas: ";
+        cin >> ouro;
+        cout << endl;
+        cout << "Digite o numero de medalhas de PRATA que o brasil ganhou nas Olimpiadas: ";
+        cin >> prata;
+        cout << endl;
+        cout << "Digite o numero de medalhas de BRONZE que o brasil ganhou nas Olimpiadas: ";
+        cin >> bronze;
+        cout << endl;
+        soma = ouro + prata + bronze;
+        cout << endl;
+        
+        cout << "O Brasil ganhou " << soma << " medalhas nas Olimpiadas." << endl;
+        arquivo << "O Brasil ganhou " << soma << " medalhas nas Olimpiadas." << endl;
+}
+

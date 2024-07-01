@@ -1,0 +1,54 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    int n1, n2, n3;
+    double media;
+    char letra, nome[25];
+    
+    cout << "Informe o nome do aluno: ";
+    cin >> nome;
+    cout << "Informe a nota 1: ";
+    cin >> n1;
+    cout << "Informe a nota 2: ";
+    cin >> n2;
+    cout << "Informe a nota 3: ";
+    cin >> n3;
+    
+    media = (n1 + (n2 * 2) + (n3 * 3)) / 6;
+    
+    if(media < 4){
+        letra = 'E';
+    }else{
+        if(media >= 4 && media < 6){
+            letra = 'D';
+        }else{
+            if(media >= 6 && media < 7.5){
+                letra = 'C';
+            }else{
+                if(media >= 7.5 && media < 9){
+                    letra = 'B';
+                }else{
+                    if((media >= 9) && (media <= 10)){
+                        letra = 'A';
+                    }else{
+                        cout << "Media invalida!!!" << endl;
+                    }
+                }
+            }
+        }
+    }
+    if((letra == 'A') || (letra == 'B') || (letra == 'C')){
+        cout << "O aluno " << nome << " foi APROVADO!!!" << endl;
+        cout << "Possuindo " << letra << " e " << media << " de media." << endl;
+    }else{
+        if((letra == 'D') || (letra == 'E')){
+            cout << "O aluno " << nome << " foi REPROVADO!!!" << endl;
+            cout << "Possuindo " << letra << " e " << media << " de media." << endl;
+        }else{
+            cout << "O aluno " << nome << " possui problema no calculo da media," << endl;
+            cout << "favor informa-la novamente." << endl;
+        }
+    }
+}

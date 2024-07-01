@@ -1,0 +1,38 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    float matriz1[4][5];
+    float matriz2[4][5];
+    int i, j;
+    
+    for(i=0; i<4; i++){
+        for(j=0; j<5; j++){
+            cout << "Digite um valor para a posicao " << i+1 << ", " << j+1 << " da matriz: ";
+            cin >> matriz1[i][j];
+            cout << endl;
+            matriz2[i][j] = matriz1[i][j] / 2;
+            
+        }
+    }
+    cout << endl;
+    cout << "Os valores da matriz sao: " << endl;
+    for(i=0; i<4; i++){
+        for(j=0; j<5; j++){
+            cout << matriz1[i][j] << "\t";
+        }
+        cout << endl;
+    }
+    cout << endl;
+    cout << "A matriz com os valores resultantes: " << endl;
+    for(i=0; i<4; i++){
+        for(j=0; j<5; j++){
+            cout << matriz2[i][j] << "\t";
+        }
+        cout << endl;
+    }
+    cout << endl;
+}
+

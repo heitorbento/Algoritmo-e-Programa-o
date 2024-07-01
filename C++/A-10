@@ -1,0 +1,24 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    int ouro, prata, bronze, conta;
+    
+    cout << "Digite o numero de medalhas de OURO que o brazil ganhou nas Olimpiadas: " << endl;
+    cin >> ouro;
+    cout << " " << endl;
+    cout << "Digite o numero de medalhas de PRATA que o brazil ganhou nas Olimpiadas: " << endl;
+    cin >> prata;
+    cout << " " << endl;
+    cout << "Digite o numero de medalhas de BRONZE que o brazil ganhou nas Olimpiadas: " << endl;
+    cin >> bronze;
+    cout << " " << endl;
+    
+    conta = ouro + prata + bronze;
+    
+    cout << "O Brasil ganhou " << conta << " medalhas nas Olimpiadas." << endl;
+    cout << " " << endl;
+    
+    return 0;
+}

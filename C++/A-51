@@ -1,0 +1,24 @@
+#include <cstdlib>
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int vetor[10];
+    int soma=0, i;
+    
+    for(i=0; i<10; i++){
+        cout << "Digite o " << i+1 << " valor: ";
+        cin >> vetor[i];
+        soma += vetor[i];
+    }
+    cout << endl;
+    cout << "Os valores digitados sao: ";
+    for(i=0; i<10; i++){
+        cout << " " << vetor[i] << " -";
+    }
+    cout << endl;
+    cout << "A soma dos valores digitados e: " << soma << endl;
+    cout << endl;
+}
+

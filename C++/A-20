@@ -1,0 +1,42 @@
+#include <iostream>
+#include <cctype>
+using namespace std;
+
+int main() {
+    int i, n, t;
+    char r;
+
+    do {
+        cout << "Deseja imprimir uma tabuada?" << endl;
+        cout << "Digite S - para sim e N - para nao: ";
+        cin >> r;
+        r = toupper(r);
+
+        if (r == 'S') {
+            cout << endl;
+            cout << " - Informe um numero entre 1 e 9 -" << endl;
+            cout << "Informe o numero que deseja saber a tabuada: ";
+            cin >> n;
+            cout << endl;
+
+            if (n >= 1 && n <= 9) {
+                for (i = 0; i <= 10; i++) {
+                    t = i * n;
+                    cout << n << " X " << i << " = " << t << endl;
+                }
+                cout << endl;
+            } else {
+                cout << "Numero invalido!!!" << endl;
+                cout << endl;
+            }
+        } else if (r == 'N') {
+            cout << endl;
+            cout << "Tudo bem, tenha um bom dia!!!" << endl;
+            cout << endl;
+        } else {
+            cout << endl;
+            cout << "Voce e burro! Digite S para sim ou N para nao." << endl;
+            cout << endl;
+        }
+    } while (r != 'N');
+}

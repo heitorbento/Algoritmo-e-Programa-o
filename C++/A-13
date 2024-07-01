@@ -1,0 +1,24 @@
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+int main(int argc, char** argv) {
+    int senha;
+    int senhaCorreta = 1234;
+    int tentativas = 0;
+
+    while (tentativas < 3) {
+        cout << "Digite a senha: ";
+        cin >> senha;
+
+        if (senha == senhaCorreta) {
+            cout << "Senha Correta." << endl;
+            break; 
+        } else {
+            cout << "Senha Incorreta." << endl;
+            tentativas++;
+        }
+    }
+
+    return 0;
+}
