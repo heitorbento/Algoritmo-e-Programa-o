@@ -4,25 +4,6 @@ depois mostre a mesma na tela.
 
 '''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #variaveis
 mat =  [[0]*3, [0]*3, [0]*3] 
 
