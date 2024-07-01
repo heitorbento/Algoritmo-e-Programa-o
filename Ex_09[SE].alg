@@ -1,43 +1,17 @@
-//Faça um algoritmo que receba duas notas e calcule a média.
-//Caso a média seja no mínimo 6 o mostrar a mensagem que o aluno está aprovado,
-//se a média for menor que 6 e igual ou superior a 4 o mesmo está de recuperação e
-//se a média for inferior a 4 o aluno está reprovado.
-//
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Faça um algoritmo que receba duas notas e calcule a média. Caso a média seja no mínimo
+6 o mostrar a mensagem que o aluno está aprovado, se a média for menor que 6 e igual 
+ou superior a 4 o mesmo está de recuperação e se a média for inferior a 4 o aluno está reprovado.
 
 algoritmo "media"
+
 var
    n1, n2, media: real
 inicio
    escreva("Informe a nota 1: ")
-   leia(n1)
+      leia(n1)
+
    escreva("Informe a nota 2: ")
-   leia(n2)
+      leia(n2)
    
    media <- (n1 + n2) / 2
    
@@ -60,10 +34,4 @@ inicio
    se(media < 4)entao
       escreval("Reprovado")
    fimse
-   
-   
-   
-   
-   
-   
 fimalgoritmo
