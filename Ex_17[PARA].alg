@@ -1,33 +1,10 @@
-//Faça um algoritmo para somar os números pares < 1000 e ao
-//final imprimir o resultado.
-//Faça com o comando PARA.
-// Use o PASSO para selecionar somente os pares.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+FaÃ§a um algoritmo para somar os nÃºmeros pares < 1000 e ao final imprimir o resultado.
+FaÃ§a com o comando PARA. Use o PASSO para selecionar somente os pares.
 
 algoritmo "soma dos pares < 1000"
 
 var
-   soma, contador:inteiro
+   soma, contador: inteiro
 inicio
    //forma 1
    soma <- 0
@@ -42,6 +19,6 @@ inicio
          soma <- soma + contador
    fimpara
    
-   escreval("O valor da soma com para é: ", soma)
+   escreval("O valor da soma com para Ã©: ", soma)
 
 fimalgoritmo
