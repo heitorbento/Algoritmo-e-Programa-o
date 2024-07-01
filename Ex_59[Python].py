@@ -5,37 +5,6 @@ imprima sua matriz transposta (matriz 3 x 2 equivalente)
 
 '''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #variaveis
 mat =  [[0]*3, [0]*3] 
 mat_trans = [[0]*2, [0]*2, [0]*2]
