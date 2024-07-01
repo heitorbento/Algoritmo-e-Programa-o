@@ -10,18 +10,6 @@ Mostre os candidatos (homens e mulheres) maiores de idade.
 
 '''
 
-
-
-
-
-
-
-
-
-
-
-
-
 #variaveis
 idade = 0
 sexo = ""
