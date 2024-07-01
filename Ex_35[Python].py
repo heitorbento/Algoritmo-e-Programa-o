@@ -1,12 +1,9 @@
-'''
 Calcular a quantidade de litros de combustível gastos em uma
 viagem. Para obter o cálculo, o usuário deverá fornecer o
 tempo gasto, quantos Km/l o carro faz e a velocidade média
 durante a viagem. O programa deverá apresentar os valores da
 velocidade média, tempo gasto na viagem, a distância percorrida e a quantidade
 de litros utilizados na viagem.
-
-'''
 
 #variaveis
 km_litro = 0.0
