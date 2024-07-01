@@ -1,4 +1,3 @@
-'''
 Uma dona de casa resolveu buscar uma renda extra para o orçamento.
 Pensando nesta ideia, ela decidiu que iria fazer pão caseiro (caseirinho) e
 broa de milho (broinha). A dona de casa vende uma certa quantidade de caseirinho
@@ -12,8 +11,6 @@ broinhas vendidos, e depois calcular o valor que ela deve guardar na
 poupança. No final você deve mostrar o valor vendido de caseirinhos,
 o valor vendido de broinhas, o total geral vendido e o valor que
 deverá ser guardado na poupança
-
-'''
 
 #variaveis
 qtd_caseirinho = 0
