@@ -3,21 +3,6 @@ Construir um algoritmo que solicite um número e calcule a tabuada deste número
 
 '''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #variaveis
 numero = 0
 
