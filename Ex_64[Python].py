@@ -8,26 +8,6 @@ Valor mais próximo da média = 7.5
 
 '''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 lista = [1,2,3,3,3,3,3,4,5,100,150,30]  
 
 def media(lista):
