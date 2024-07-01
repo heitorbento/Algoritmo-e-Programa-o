@@ -1,60 +1,26 @@
-//    Foi feita uma pesquisa de audiência de canal de TV
-//em várias casas de uma certa cidade, num determinado dia.
-//    Para cada casa visitada, é fornecido o número do
-//canal (9, 12, 23 ou 40).
-//    Fazer um algoritmo que:
-//       - leia um número indeterminado de dados,
-//         até que seja digitado o canal 0(zero);
-//       - Calcule e mostre a porcentagem de
-//         audiência de cada emissora;
-//       - Caso seja digitado algum canal fora dos
-//         apresentado acima, informar como outros canais;
-//       - O número 0(zero) não pode ser considerado um canal.
+Foi feita uma pesquisa de audiência de canal de TV em várias casas de uma certa cidade, 
+num determinado dia. Para cada casa visitada, é fornecido o número do canal (9, 12, 23 ou 40).
+Fazer um algoritmo que:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- leia um número indeterminado de dados, até que seja digitado o canal 0(zero);
+- Calcule e mostre a porcentagem de audiência de cada emissora;
+- Caso seja digitado algum canal fora dos apresentado acima, informar como outros canais;
+- O número 0(zero) não pode ser considerado um canal.
 
 algoritmo "Canal TV"
+
 var
- canal, canal_9, canal_12, canal_23, canal_40:inteiro
- outros_canais, contador:inteiro
- p_canal_9, p_canal_12,p_canal_23,p_canal_40,p_outros:real
+ canal, canal_9, canal_12, canal_23, canal_40: inteiro
+ outros_canais, contador: inteiro
+ p_canal_9, p_canal_12,p_canal_23,p_canal_40,p_outros: real
+
 inicio
    contador <- 0
    canal <- 1
+
    enquanto canal <> 0 faca
       escreva(" Informe o canal (9 | 12 | 23 | 40): ")
-      leia(canal)
+       leia(canal)
 
       se(canal = 9) entao
          canal_9 <- canal_9 + 1
