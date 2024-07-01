@@ -1,13 +1,9 @@
-# Crie uma função para mostrar a mensagem: Hello world!!!
-# Não há necessidade de se passar parâmetros
-
-
-
+Crie uma função para mostrar a mensagem: Hello world!!!
+Não há necessidade de se passar parâmetros
 '''
 Exemplo de Função sem passagem de parâmetro.
 
 '''
-
 #variaveis
 
 #funcao
