@@ -1,46 +1,19 @@
-// Construa um algoritmo que solicite 10 letras ou números (se atente para o tipo de dados da variável)
-//  Ao final o algoritmo deve informar a quantidade de cada vogal
-//  digitada, o número total de consoantes que foram digitadas
-//  e quantos números de 0 até 9 foram digitados.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Construa um algoritmo que solicite 10 letras ou números (se atente para o tipo de dados da variável)
+Ao final o algoritmo deve informar a quantidade de cada vogal digitada, o número total de consoantes 
+que foram digitadas e quantos números de 0 até 9 foram digitados.
 
 algoritmo "Vogal"
-var
 
- letra:caractere
- vogal_a, vogal_e, vogal_i, vogal_o, vogal_u:inteiro
+var
+ letra: caractere
+ vogal_a, vogal_e, vogal_i, vogal_o, vogal_u: inteiro
  consoante, numero, contador: inteiro
 
 inicio
-
    para contador <- 1 ate 20 faca
       escreva (" Informe a Letra ", contador, ": ")
-      leia (letra)
+       leia (letra)
+
       se (letra = "a") entao
          vogal_a <- vogal_a + 1
       senao
@@ -79,7 +52,3 @@ inicio
    escreval ("Foram digitados ", numero, " números de 0 até 9")
 
 fimalgoritmo
-
-
-
-
