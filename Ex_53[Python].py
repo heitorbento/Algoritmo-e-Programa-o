@@ -7,36 +7,6 @@ crie um algoritmo que crie e leia um vetor com 6 posições e a partir disso fa�
 
 '''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #variaveis
 vet=[0]*6
 
