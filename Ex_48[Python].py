@@ -14,20 +14,6 @@ canal (9, 12, 23 ou 40).
 
 '''
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #variaveis
 canal = 0
 canal_9 = 0
